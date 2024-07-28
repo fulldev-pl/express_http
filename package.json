@@ -5,7 +5,7 @@
     "main": "dist/server.js",
     "scripts": {
         "watch": "tsc --watch",
-        "build": "tsc",
+        "build": "npm install && tsc",
         "dev": "npm run watch & nodemon",
         "start": "node ."
     },
