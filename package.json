@@ -6,8 +6,7 @@
     "scripts": {
         "watch": "tsc --watch",
         "build": "npm install && tsc",
-        "dev": "npm run watch & nodemon",
-        "start": "node ."
+        "dev": "npm run watch & nodemon"
     },
     "keywords": [],
     "author": "",
