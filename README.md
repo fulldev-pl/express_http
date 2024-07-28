@@ -1,10 +1,10 @@
-# ExpressJS HTTP server
+# Basic Express HTTP server
 
-Example of basic nodeJS HTTP server, with usage of expressJS and few tools like eslint, prettier and typescript.
+Example of HTTP server made with express framework and few tools like eslint, prettier and typescript.
 
 ## Required packages
 
--   expressJS
+-   express
 -   dotenv
 -   nodemon
 -   typescript
@@ -15,14 +15,39 @@ Example of basic nodeJS HTTP server, with usage of expressJS and few tools like 
 -   eslint-config-prettier
 -   @types/express
 
+## vscode plugins
+
+Those are vscode plugins I have used while creating this example.
+Between parentheses I wrote extension IDs, so you can find them easier.
+
+-   ESLint (dbaeumer.vscode-eslint)
+-   Prettier - Code formatter (esbenp.prettier-vscode)
+-   GitLens (eamodio.gitlens)
+
+## vscode settings.json
+
+```json
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    }
+}
+```
+
 ## Packages installation
 
-```
+```shell
 npm init -y
 
-npm i express
+npm i express dotenv
 
-npm i —-save-dev typescript eslint@8 @types/express @typescript-eslint/eslint-plugin nodemon prettier
+npm i —-save-dev typescript @types/express nodemon prettier
+
+npm i —-save-dev eslint@8 @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier
 
 npx -p typescript tsc --init
 ```
@@ -72,25 +97,28 @@ module.exports = {
 }
 ```
 
-## vscode plugins
+## .prettierrc config
 
-Those are vscode plugins I have used creating this example:
-
--   ESLint - dbaeumer.vscode-eslint
--   Prettier - Code formatter - esbenp.prettier-vscode
-
-## vscode settings.json
+Example of basic prettier setup.
 
 ```json
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[typescript]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": "explicit"
-        }
-    }
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
 }
 ```
 
-## Deployment to render
+## Deployment
+
+I have deployed this app to service called [Render](https://render.com/register).
+
+They also offer free tier, so you can play around and deploy some simple apps.
+
+Live url is [here](https://express-http-tnjz.onrender.com).
+
+## Support
+
+This is my youtube [channel](https://www.youtube.com/channel/UCCBoahZ21JQ3wClmEeWqzUg).
+Let me know if you liked this example.
