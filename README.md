@@ -54,8 +54,10 @@ npx -p typescript tsc --init
 
 ## .env file
 
+In this example I have set 3000, but you can use any port you want.
+
 ```json
-PORT=3000 // OR WHICHEVER YOU WANT TO USE
+PORT=3000
 ```
 
 ## eslint config
